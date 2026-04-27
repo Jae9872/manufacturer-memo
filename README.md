@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Manufacturer Memo
+
+Instant clarity on international factory quotes for UK indie beauty and packaging brands. 100% Free.
+
+## Features
+
+- **AI-Powered Analysis**: Uses Google Gemini AI to analyze factory quotes and communications
+- **Plain English Translation**: Converts jargon-filled manufacturing quotes into clear, actionable insights
+- **UK-Specific Guidance**: Focuses on UK customs, Incoterms, VAT, and compliance requirements
+- **Luxury Design**: Minimalist, high-fashion aesthetic with organic elements
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Set up environment variables:**
+   - Get a free Gemini API key from [Google AI Studio](https://aistudio.google.com/)
+   - Create `.env.local` file and add:
+     ```
+     GEMINI_API_KEY=your_api_key_here
+     ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How It Works
 
-## Learn More
+1. Paste your factory quote, email, or specification sheet into the text area
+2. Click "Analyze Quote"
+3. Receive a structured analysis with:
+   - **Plain English Summary**: What the factory is offering (MOQs, timelines)
+   - **Hidden Costs & Jargon**: Incoterms breakdown, missing costs (Freight, VAT, Duties)
+   - **UK Compliance Checklist**: Required certifications for your product type
+   - **Negotiator's Pushback**: 3 critical questions to ask the factory
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment to Azure Static Web Apps
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Push to GitHub:**
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/manufacturer-memo.git
+   git branch -M main
+   git push -u origin main
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Deploy via Azure Portal:**
+   - Go to [Azure Portal](https://portal.azure.com/)
+   - Search for "Static Web Apps"
+   - Click "Create" → "Link to GitHub"
+   - Select your repository
+   - Build preset: **Next.js**
+   - Add environment variable: `GEMINI_API_KEY` with your actual API key
+   - Click "Review + Create"
 
-## Deploy on Vercel
+## Built With
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js 16](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Google Gemini AI](https://ai.google.dev/)
+- [React Markdown](https://github.com/remarkjs/react-markdown)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT
