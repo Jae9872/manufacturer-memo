@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -27,7 +29,8 @@ export default function Home() {
       setMarkdownResult(data.result || "No result returned");
     } catch (error) {
       console.error("Error:", error);
-      setMarkdownResult(`Error analyzing quote: ${error.message}`);
+      const errorMessage = error instanceof Error ? error.message : "Unknown error occurred";
+      setMarkdownResult(`Error analyzing quote: ${errorMessage}`);
     } finally {
       setIsLoading(false);
     }
@@ -53,7 +56,7 @@ export default function Home() {
           </label>
           <textarea
             id="quote-input"
-            rows="8"
+            rows={8}
             placeholder="Paste the factory quote, email, or specification sheet here..."
             value={quoteInput}
             onChange={(e) => setQuoteInput(e.target.value)}
