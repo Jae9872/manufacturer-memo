@@ -20,7 +20,22 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Manufacturer Memo | Free AI Tool for UK Indie Brands",
-  description: "Decode international factory quotes with AI - free tool for UK indie beauty and packaging brands",
+  description: "Decode international factory quotes with AI - free tool for UK indie beauty and packaging brands. Analyze MOQs, lead times, and hidden costs instantly.",
+  keywords: ["manufacturer memo", "factory quote analyzer", "UK indie brands", "beauty packaging", "MOQ calculator", "AI quote analysis"],
+  authors: [{ name: "Jae Pasha" }],
+  openGraph: {
+    title: "Manufacturer Memo | Free AI Tool for UK Indie Brands",
+    description: "Decode international factory quotes with AI - free tool for UK indie beauty and packaging brands.",
+    url: "https://manufacturer-memo.azurestaticapps.net",
+    siteName: "Manufacturer Memo",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Manufacturer Memo | Free AI Tool",
+    description: "Decode international factory quotes with AI - free for UK indie brands.",
+  },
 };
 
 export default function RootLayout({
