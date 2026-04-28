@@ -3,6 +3,32 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 
+export const metadata: Metadata = {
+  title: "QuoteClarity | Decode Factory Quotes Instantly",
+  description: "Get structured, no-fluff analysis of international factory quotes. Built for UK indie brands. MOQ, lead times, hidden costs - decoded in seconds.",
+  keywords: ["quote clarity", "factory quote decoder", "UK indie brands", "MOQ calculator", "Incoterms checker", "manufacturing quote analysis"],
+  authors: [{ name: "Jae Pasha" }],
+  openGraph: {
+    title: "QuoteClarity | Decode Factory Quotes Instantly",
+    description: "Get structured, no-fluff analysis of international factory quotes. Built for UK indie brands.",
+    url: "https://quoteclarity.huxangroup.com",
+    siteName: "QuoteClarity",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "QuoteClarity | Decode Factory Quotes",
+    description: "Structured, no-fluff factory quote analysis for UK indie brands.",
+  },
+  icons: {
+    icon: "/favicon.svg",
+  },
+  other: {
+    "last-updated": "2026-04-28",
+  },
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
