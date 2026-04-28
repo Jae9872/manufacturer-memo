@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Manufacturer Memo | Free AI Tool for UK Indie Brands",
     description: "Decode international factory quotes with AI - free tool for UK indie beauty and packaging brands.",
-    url: "https://manufacturer-memo.azurestaticapps.net",
+    url: "https://brave-rock-066fa4610.7.azurestaticapps.net",
     siteName: "Manufacturer Memo",
     locale: "en_GB",
     type: "website",

@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# TODO: Replace with your actual domain once you set it up
-Sitemap: https://manufacturer-memo.azurestaticapps.net/sitemap.xml
+# Current live Azure URL - update this once you set up your custom domain
+Sitemap: https://brave-rock-066fa4610.7.azurestaticapps.net/sitemap.xml
