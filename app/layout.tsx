@@ -49,8 +49,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} h-full antialiased`}
     >
       <head>
-        {/* Google Search Console Verification - Replace YOUR_VERIFICATION_CODE with actual code from Google */}
-        <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="Xd0RAaCI7vjQ17au_TmL4xfoQVmQrH4P3VBXXdY1Jew" />
         
         {/* Structured Data for SEO */}
         <script
