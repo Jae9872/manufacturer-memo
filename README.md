@@ -1,13 +1,13 @@
-# Manufacturer Memo
+# QuoteClarity
 
-Instant clarity on international factory quotes for UK indie beauty and packaging brands. 100% Free.
+Decode factory quotes instantly. No fluff, just facts. Built for UK indie brands.
 
 ## Features
 
-- **AI-Powered Analysis**: Uses Google Gemini AI to analyze factory quotes and communications
-- **Plain English Translation**: Converts jargon-filled manufacturing quotes into clear, actionable insights
+- **Structured AI Analysis**: Get concise, actionable insights from factory quotes in seconds
+- **Plain English Translation**: Converts jargon-filled manufacturing quotes into clear facts
 - **UK-Specific Guidance**: Focuses on UK customs, Incoterms, VAT, and compliance requirements
-- **Luxury Design**: Minimalist, high-fashion aesthetic with organic elements
+- **Clean, Professional Design**: Minimalist interface focused on readability and speed
 
 ## Getting Started
 

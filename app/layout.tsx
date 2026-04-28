@@ -19,22 +19,22 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Manufacturer Memo | Free AI Tool for UK Indie Brands",
-  description: "Decode international factory quotes with AI - free tool for UK indie beauty and packaging brands. Analyze MOQs, lead times, and hidden costs instantly.",
-  keywords: ["manufacturer memo", "factory quote analyzer", "UK indie brands", "beauty packaging", "MOQ calculator", "AI quote analysis"],
+  title: "QuoteClarity | Decode Factory Quotes Instantly",
+  description: "Get structured, no-fluff analysis of international factory quotes. Built for UK indie brands. MOQ, lead times, hidden costs - decoded in seconds.",
+  keywords: ["quote clarity", "factory quote decoder", "UK indie brands", "MOQ calculator", "Incoterms checker", "manufacturing quote analysis"],
   authors: [{ name: "Jae Pasha" }],
   openGraph: {
-    title: "Manufacturer Memo | Free AI Tool for UK Indie Brands",
-    description: "Decode international factory quotes with AI - free tool for UK indie beauty and packaging brands.",
+    title: "QuoteClarity | Decode Factory Quotes Instantly",
+    description: "Get structured, no-fluff analysis of international factory quotes. Built for UK indie brands.",
     url: "https://brave-rock-066fa4610.7.azurestaticapps.net",
-    siteName: "Manufacturer Memo",
+    siteName: "QuoteClarity",
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manufacturer Memo | Free AI Tool",
-    description: "Decode international factory quotes with AI - free for UK indie brands.",
+    title: "QuoteClarity | Decode Factory Quotes",
+    description: "Structured, no-fluff factory quote analysis for UK indie brands.",
   },
 };
 

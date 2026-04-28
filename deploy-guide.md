@@ -1,4 +1,4 @@
-# Deployment Guide - Manufacturer Memo
+# Deployment Guide - QuoteClarity
 
 ## Quick Start Checklist
 
@@ -18,7 +18,7 @@
 
 ### 2. Create GitHub Repository (5 minutes)
 1. Go to https://github.com/new
-2. Repository name: `manufacturer-memo`
+2. Repository name: `quote-clarity`
 3. Set to Public (required for free Azure Static Web Apps)
 4. Do NOT initialize with README (we already have one)
 5. Click "Create repository"
@@ -26,7 +26,7 @@
 ### 3. Push Code to GitHub (2 minutes)
 Run these commands in terminal:
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/manufacturer-memo.git
+git remote add origin https://github.com/YOUR_USERNAME/quote-clarity.git
 git branch -M main
 git push -u origin main
 ```

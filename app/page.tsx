@@ -42,10 +42,10 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-serif text-slate-900 mb-4 tracking-tighter">
-            Manufacturer Memo
+            QuoteClarity
           </h1>
           <p className="text-xl font-light text-slate-600 max-w-2xl mx-auto">
-            Instant clarity on international quotes. 100% Free.
+            Decode factory quotes instantly. No fluff, just facts.
           </p>
         </div>
 
@@ -87,9 +87,9 @@ export default function Home() {
         {markdownResult && (
           <div className="mt-20 pt-10 border-t-2 border-[#E0E0D0]">
             <h2 className="text-3xl font-serif text-slate-900 mb-8 text-center">
-              Analysis Results
+              Your Quote Analysis
             </h2>
-            <div className="prose prose-slate max-w-none mx-auto">
+            <div className="prose prose-slate max-w-none mx-auto bg-white/60 backdrop-blur-sm rounded-xl p-8 border border-[#E0E0D0]">
               <ReactMarkdown>{markdownResult}</ReactMarkdown>
             </div>
           </div>
