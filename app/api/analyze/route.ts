@@ -11,38 +11,15 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY === "your_gemini_api_key_here") {
+    if (!process.env.GEMINI_API_KEY) {
       return new Response(
-        JSON.stringify({ 
-          result: `## Demo Mode - Add Your Gemini API Key
-
-This is a demonstration of the analysis format. To get real AI-powered analysis:
-
-1. Get a free API key from [Google AI Studio](https://aistudio.google.com/)
-2. Add it to your \`.env.local\` file as \`GEMINI_API_KEY=your_actual_key\`
-3. Restart the server
-
-### 1. Plain English Summary
-This would show what the factory is offering including MOQs and timelines.
-
-### 2. The Hidden Costs & Jargon
-This would break down Incoterms (FOB, EXW, etc.) and identify missing costs like Freight Forwarding, UK VAT, and Customs Duties.
-
-### 3. UK Compliance Checklist
-This would list required UK certifications for your product type.
-
-### 4. The Negotiator's Pushback
-This would provide 3 critical questions to ask the factory.
-
----
-*Add your API key to see the real AI analysis.*`
-        }),
-        { status: 200, headers: { "Content-Type": "application/json" } }
+        JSON.stringify({ error: "API key not configured" }),
+        { status: 500, headers: { "Content-Type": "application/json" } }
       );
     }
 
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const systemPrompt = `You are a senior UK Customs, Logistics, and Manufacturing Consultant. A user has provided text which is a quote, specification sheet, or communication from an international manufacturer, likely in China or India. 
 
