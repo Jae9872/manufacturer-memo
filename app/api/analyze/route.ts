@@ -72,8 +72,9 @@ User's factory communication:
     );
   } catch (error) {
     console.error("Error in analyze route:", error);
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
     return new Response(
-      JSON.stringify({ error: "Internal server error" }),
+      JSON.stringify({ error: `Server error: ${errorMessage}` }),
       { status: 500, headers: { "Content-Type": "application/json" } }
     );
   }
