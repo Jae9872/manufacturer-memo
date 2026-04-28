@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Current live Azure URL - update this once you set up your custom domain
-Sitemap: https://brave-rock-066fa4610.7.azurestaticapps.net/sitemap.xml
+Sitemap: https://quoteclarity.huxangroup.com/sitemap.xml

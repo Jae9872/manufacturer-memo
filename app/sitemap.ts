@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 
-// Current live Azure URL - update this once you set up your custom domain
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://brave-rock-066fa4610.7.azurestaticapps.net'
+// Live domain
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://quoteclarity.huxangroup.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "QuoteClarity | Decode Factory Quotes Instantly",
     description: "Get structured, no-fluff analysis of international factory quotes. Built for UK indie brands.",
-    url: "https://brave-rock-066fa4610.7.azurestaticapps.net",
+    url: "https://quoteclarity.huxangroup.com",
     siteName: "QuoteClarity",
     locale: "en_GB",
     type: "website",
@@ -48,6 +48,35 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} h-full antialiased`}
     >
+      <head>
+        {/* Google Search Console Verification - Replace YOUR_VERIFICATION_CODE with actual code from Google */}
+        <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
+        
+        {/* Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "QuoteClarity",
+              "description": "Decode factory quotes instantly with AI. No fluff, just facts. Built for UK indie brands.",
+              "url": "https://quoteclarity.huxangroup.com",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Any",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "GBP"
+              },
+              "creator": {
+                "@type": "Person",
+                "name": "Jae Pasha"
+              }
+            })
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-[#F7F7F2]">{children}</body>
     </html>
   );
